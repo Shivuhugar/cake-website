@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary" id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">Welcome to Shivu's Hotel</h1>
+        <p ondblclick="ondblclick1()" id="demo">Food is a ultimate solution for your hunger,good food creates good mood<br>
+        Food is the substance we eat every day for energy and strength.</p>
+        <button class="btn" onclick="onclick1()">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/1.png" alt=""  >
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center"> Catering is the business of providing food service at a remote site or a site such as a hotel, hospital, pub, aircraft, cruise ship, park, filming site or studio, entertainment site, or event venue for a large number of people.</p>
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt=""  >
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Bulk ordering, or also known as bulk purchasing, is the process of ordering large quantities of an item at a discounted rate. Bulk ordering is essential for any business owner, as it allows them to satisfy their customers' demands while maximizing on their profit.</p>
+            </div>
+            <div class="box">
+                <img src="img/3.png" alt=""  >
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">If the customer is very smart, he or she will be able to achieve the desired result. After all, guilt is a mistake
+                    The company itself is a very successful company. They provide for the needs of some small escapes, but I will explain. Ask them what will happen, there are troubles they do not know! Who.
+                    for they are chosen from sorrows. When you must do it, pleasures fall upon them, and flexibility is pleasure
+                    happy pleasure with easy work, let all that be him.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/logo1.png" alt="Our Client"  onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            </div>
+            <div class="client-item">
+                <img src="img/logo2.png" alt="Our Client"  onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            </div>
+          
+            <div class="client-item">
+                <img src="img/logo4.png" alt="Our Client"  onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            </div>
+            <div class="client-item">
+                <img src="img/logo3.png" alt="Our Client"  onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+            </div>
+            <div class="content">
+                
+            <table border="2" >
+                <tr>
+                    <th>sr</th>
+                    <th>food</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>puri</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>idli</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>dosa</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>uttapa</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="main.php"  method="post"
+            onreset="alert('form data reset successful')"
+            onsubmit="return  validateForm()">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" onfocus="xyz(this)" onblur="onblur1(this)" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email"  onfocus="xyz(this)" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="number" id="phone"  
+                    onfocus="xyz(this)"  onblur="onblur1(this)" placeholder="Enter your phone">
+                </div>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea onselect="alert('textselected')" name="message" id="message" 
+                    
+                    onfocus="xyz(this)"  onblur="onblur1(this)"  cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="Payment">Payment: </label>
+                    <select name="Payment" id="Payment" onchange="alert('You changed the Payment Option')">
+                        <option value="Cash">CASH</option>
+                        <option value="Card">CARD</option>
+                    </select>
+                </div>
+                
+                <input type="submit" name="submit" class="btn">
+                <input type="reset" name="reset" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.onlinefood.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
